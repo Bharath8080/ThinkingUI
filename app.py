@@ -108,11 +108,11 @@ def main():
 
     st.markdown(f"""
     <div style='text-align: center; margin-bottom: 2rem;'>
-        <h1 style='margin-bottom: 1rem;'>
+        <h2 style='margin-bottom: 1rem;'>
             <img src="data:image/png;base64,{ollama_logo}" width="40" style="vertical-align: middle; margin-right: 10px;">
-            Ollama Minimax Chat
+            Ollama Minimax-M2:Cloud Chat
             <img src="data:image/png;base64,{minimax_logo}" width="40" style="vertical-align: middle; margin-left: 10px;">
-        </h1>
+        </h2>
         <h4 style='color: #666; margin-top: 0;'>With thinking UI! 💡</h4>
     </div>
     """, unsafe_allow_html=True)
