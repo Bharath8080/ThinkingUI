@@ -120,7 +120,7 @@ def main():
     </style>
     <div style='text-align: center; margin-bottom: 2rem;'>
         <h2 style='margin-bottom: 1rem;'>
-            <img src="data:image/png;base64,{ollama_logo}" width="40" style="vertical-align: middle; margin-right: 10px;">
+            <img src="data:image/png;base64,{ollama_logo}" width="42" style="vertical-align: middle; margin-right: 10px;">
             Ollama <span class="gradient-text">Minimax-M2:Cloud</span> Chat
             <img src="data:image/png;base64,{minimax_logo}" width="45" style="vertical-align: middle; margin-left: 10px;">
         </h2>
@@ -135,6 +135,6 @@ def main():
 if __name__ == "__main__":
     if "messages" not in st.session_state:
         st.session_state["messages"] = [
-            {"role": "system", "content": "You are a helpful AI assistant that explains your reasoning before answering."}
+            {"role": "system", "content": "You are a helpful AI assistant that explains your reasoning before answering. The final answer should be short and direct."}
         ]
     main()
