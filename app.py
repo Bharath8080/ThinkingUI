@@ -107,11 +107,22 @@ def main():
     ollama_logo = base64.b64encode(open("assets/ollama.png", "rb").read()).decode()
 
     st.markdown(f"""
+    <style>
+        .gradient-text {{
+            background: linear-gradient(to right, #EC227A, #F77334);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* Adjust font size and weight if you want this specific part to stand out more */
+            font-size: inherit; /* Keep the font size of the parent h2 */
+            font-weight: bold; /* Make it bold for better visibility if desired */
+            display: inline-block; /* Essential for background-clip to work correctly */
+        }}
+    </style>
     <div style='text-align: center; margin-bottom: 2rem;'>
         <h2 style='margin-bottom: 1rem;'>
             <img src="data:image/png;base64,{ollama_logo}" width="40" style="vertical-align: middle; margin-right: 10px;">
-            Ollama Minimax-M2:Cloud Chat
-            <img src="data:image/png;base64,{minimax_logo}" width="40" style="vertical-align: middle; margin-left: 10px;">
+            Ollama <span class="gradient-text">Minimax-M2:Cloud</span> Chat
+            <img src="data:image/png;base64,{minimax_logo}" width="45" style="vertical-align: middle; margin-left: 10px;">
         </h2>
         <h4 style='color: #666; margin-top: 0;'>With thinking UI! 💡</h4>
     </div>
